@@ -17,7 +17,7 @@ function calculateTotalMortgage(percent, contribution, amount, countMonths) {
   let loanBody = amount - contribution;
 
   let monthlyPayment = loanBody * (monthlyPercent + (monthlyPercent / (Math.pow(1 + monthlyPercent, countMonths) - 1)));
-  let totalPayment = contribution + (monthlyPayment * countMonths);
+  let totalPayment = monthlyPayment * countMonths;
   let roundedTotalPayment = totalPayment.toFixed(2);
 
   return parseFloat(roundedTotalPayment);
