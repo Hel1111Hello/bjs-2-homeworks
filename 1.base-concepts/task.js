@@ -19,5 +19,5 @@ function calculateTotalMortgage(percent, contribution, amount, countMonths) {
   const monthlyPayment = loanBody * (monthlyPercent + (monthlyPercent / (Math.pow(1 + monthlyPercent, countMonths) - 1)));
   const totalPayment = contribution + (monthlyPayment * countMonths);
 
-  return totalPayment.toFixed(2);
+  return parseFloat(totalPayment.toFixed(2));
 }
