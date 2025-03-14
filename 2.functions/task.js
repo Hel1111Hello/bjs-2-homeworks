@@ -27,6 +27,7 @@ function differenceEvenOddWorker(...arr) {
 
 function averageEvenElementsWorker(...arr) {
   
+  if (arr.length == 0) return 0;
   return arr.filter(num => num % 2 === 0).reduce((a, b) => a + b, 0) / arr.filter(num => num % 2 === 0).length;
 }
 
