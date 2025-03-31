@@ -41,7 +41,7 @@ class PrintEditionItem {
     constructor(author, name, releaseDate, pagesCount) {
       super(name, releaseDate, pagesCount);
       this.author = author;
-      this.type = "Book";
+      this.type = "book";
     }
   }
   
